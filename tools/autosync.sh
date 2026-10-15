@@ -31,7 +31,24 @@ JAR="build/libs/$NAME"
 synced() {  # DIR: exactly one artburgblocks jar there and it is this build
     [ "$(ls "$1" 2>/dev/null | grep -c '^artburgblocks-.*\.jar$')" = "1" ] && cmp -s "$1/$NAME" "$JAR"
 }
-synced "$SERVER_MODS" && synced "$CLIENT_MODS" && synced "$MAP_PACKS" && exit 0
+
+# old jars the map's renderers held open when they were replaced: remove each as soon as it is free
+(
+    cd "$MAP_PACKS/../.." || exit 0
+    gone=""
+    for f in assets/resourcepacks/artburgblocks-*.jar; do
+        [ -e "$f" ] && [ "$(basename "$f")" != "$NAME" ] || continue
+        cmp -s "$f" "$ROOT/$JAR" && continue
+        git rm -q "$f" 2>/dev/null && gone="$gone $(basename "$f")"
+    done
+    if [ -n "$gone" ]; then
+        git commit -q -m "Карта: убран старый Artburg Blocks:$gone" -- assets/resourcepacks && log "web map: removed$gone"
+        git push -q origin main 2>/dev/null || true
+    fi
+)
+
+# the map may keep an old jar a while (see above), it only needs this one
+synced "$SERVER_MODS" && synced "$CLIENT_MODS" && cmp -s "$MAP_PACKS/$NAME" "$JAR" && exit 0
 
 SUM=$(sha256sum "$JAR" | cut -c1-16)
 if [ -f "$FAILED" ] && [ "$(cat "$FAILED")" = "$SUM" ]; then exit 0; fi

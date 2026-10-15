@@ -46,6 +46,7 @@ BLOCKS=$(ls src/main/resources/assets/artburgblocks/blockstates | sed 's/\.json$
 log "Artburg Blocks $VERSION: start (blocks: $BLOCKS)"
 if [ "$BUILD" = 1 ]; then
     python tools/gen_textures.py || die "texture generator failed"
+    python tools/gen_granite.py > /dev/null || die "granite generator failed"
     ./gradlew build > build.log 2>&1 || die "gradle build failed, see build.log"
 fi
 [ -f "$JAR" ] || die "$JAR does not exist"
@@ -133,20 +134,22 @@ check "$CLIENT_MODS" || die "client mods folder is not right after the swap, loo
 log "client: $NAME in${aside:+, put aside: $aside}"
 
 # ---------------------------------------------------------------- 3. web map (its textures come from the jar)
+# The map's renderers keep the jars open for hours, so an old one often cannot be deleted yet. It does no harm meanwhile
+# (the map reads the jars in name order and the later one wins) and tools/autosync.sh removes it on a later pass.
 (
     cd "$MAP_REPO" || exit 1
+    cp -f "$STAGED" "$MAP_PACKS/$NAME" && git add "$MAP_PACKS/$NAME" || exit 1
     for f in "$MAP_PACKS"/artburgblocks-*.jar; do
         [ -e "$f" ] || continue
         [ "$(basename "$f")" = "$NAME" ] && continue
-        git rm -q "$f" 2>/dev/null || rm -f "$f"
+        git rm -q "$f" 2>/dev/null || echo "$(date '+%m-%d %H:%M:%S') web map: $(basename "$f") is in use by the map renderer, it goes on a later pass"
     done
-    cp -f "$STAGED" "$MAP_PACKS/$NAME" && git add "$MAP_PACKS/$NAME" || exit 1
     if ! git diff --cached --quiet -- "$MAP_PACKS"; then
         git commit -q -m "Карта: Artburg Blocks $VERSION" -- "$MAP_PACKS" || exit 1
         git push -q origin main 2>/dev/null || echo "push failed, the commit stays local"
     fi
 ) >> "$LOG" 2>&1 || die "web map: could not update $MAP_REPO/$MAP_PACKS"
-[ "$(ls "$MAP_REPO/$MAP_PACKS" | grep -c '^artburgblocks-.*\.jar$')" = "1" ] || die "web map: more than one artburgblocks jar"
+cmp -s "$MAP_REPO/$MAP_PACKS/$NAME" "$STAGED" || die "web map: $NAME is not there"
 log "web map: $NAME in, $(cd "$MAP_REPO" && git log --oneline -1 -- "$MAP_PACKS/$NAME")"
 
 rm -f "$STAGED"

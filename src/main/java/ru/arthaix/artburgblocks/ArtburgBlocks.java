@@ -23,7 +23,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @Mod.EventBusSubscriber(modid = ArtburgBlocks.MODID)
 public class ArtburgBlocks {
     public static final String MODID = "artburgblocks";
-    public static final String VERSION = "1.0.1";
+    public static final String VERSION = "1.1.0";
 
     public static final List<Block> BLOCKS = new ArrayList<>();
 
@@ -44,6 +44,9 @@ public class ArtburgBlocks {
         add(new BlockLawn("lawn_worn", MapColor.GRASS));
         add(new BlockLawn("lawn_seeded", MapColor.DIRT));
         add(new BlockLawn("lawn_grid", MapColor.GRASS));
+        for (int percent : new int[] {60, 70, 80, 90, 110, 120}) {     // tools/gen_granite.py makes their textures
+            add(new BlockGranite(percent));
+        }
     }
 
     private static void add(Block block) {
