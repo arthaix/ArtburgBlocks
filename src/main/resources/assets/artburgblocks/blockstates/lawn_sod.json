@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "axis=z": [
+      {
+        "model": "artburgblocks:lawn_sod_0"
+      },
+      {
+        "model": "artburgblocks:lawn_sod_0",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:lawn_sod_1"
+      },
+      {
+        "model": "artburgblocks:lawn_sod_1",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:lawn_sod_2"
+      },
+      {
+        "model": "artburgblocks:lawn_sod_2",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:lawn_sod_3"
+      },
+      {
+        "model": "artburgblocks:lawn_sod_3",
+        "y": 180
+      }
+    ],
+    "axis=x": [
+      {
+        "model": "artburgblocks:lawn_sod_0",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:lawn_sod_0",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:lawn_sod_1",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:lawn_sod_1",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:lawn_sod_2",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:lawn_sod_2",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:lawn_sod_3",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:lawn_sod_3",
+        "y": 270
+      }
+    ]
+  }
+}

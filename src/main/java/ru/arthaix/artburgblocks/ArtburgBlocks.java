@@ -1,0 +1,75 @@
+package ru.arthaix.artburgblocks;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+/** Blocks of the Artburg server. Needed on the server and on every client. */
+@Mod(modid = ArtburgBlocks.MODID, name = "Artburg Blocks", version = ArtburgBlocks.VERSION, acceptedMinecraftVersions = "[1.12.2]")
+@Mod.EventBusSubscriber(modid = ArtburgBlocks.MODID)
+public class ArtburgBlocks {
+    public static final String MODID = "artburgblocks";
+    public static final String VERSION = "1.0.0";
+
+    public static final List<Block> BLOCKS = new ArrayList<>();
+
+    public static final CreativeTabs TAB = new CreativeTabs(MODID) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(BLOCKS.get(0));
+        }
+    };
+
+    static {
+        // the order is the order in the creative tab
+        add(new BlockLawnAxis("lawn_sod", MapColor.GRASS));
+        add(new BlockLawn("lawn_mowed", MapColor.GRASS));
+        add(new BlockLawnStriped("lawn_striped", MapColor.GRASS));
+        add(new BlockLawn("lawn_overgrown", MapColor.GRASS));
+        add(new BlockLawn("lawn_dry", MapColor.SAND));
+        add(new BlockLawn("lawn_worn", MapColor.GRASS));
+        add(new BlockLawn("lawn_seeded", MapColor.DIRT));
+        add(new BlockLawn("lawn_grid", MapColor.GRASS));
+    }
+
+    private static void add(Block block) {
+        BLOCKS.add(block);
+    }
+
+    @SubscribeEvent
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
+        for (Block block : BLOCKS) {
+            event.getRegistry().register(block);
+        }
+    }
+
+    @SubscribeEvent
+    public static void registerItems(RegistryEvent.Register<Item> event) {
+        for (Block block : BLOCKS) {
+            event.getRegistry().register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
+        }
+    }
+
+    @SideOnly(Side.CLIENT)
+    @SubscribeEvent
+    public static void registerModels(ModelRegistryEvent event) {
+        for (Block block : BLOCKS) {
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
+                    new ModelResourceLocation(block.getRegistryName(), "inventory"));
+        }
+    }
+}

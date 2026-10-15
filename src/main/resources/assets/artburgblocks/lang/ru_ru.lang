@@ -1,0 +1,9 @@
+itemGroup.artburgblocks=Артбург
+tile.artburgblocks.lawn_sod.name=Свежий рулонный газон
+tile.artburgblocks.lawn_mowed.name=Стриженый газон
+tile.artburgblocks.lawn_striped.name=Газон с полосами покоса
+tile.artburgblocks.lawn_overgrown.name=Некошеная трава
+tile.artburgblocks.lawn_dry.name=Выгоревшая трава
+tile.artburgblocks.lawn_worn.name=Вытоптанный газон
+tile.artburgblocks.lawn_seeded.name=Свежий посев газона
+tile.artburgblocks.lawn_grid.name=Газонная решётка

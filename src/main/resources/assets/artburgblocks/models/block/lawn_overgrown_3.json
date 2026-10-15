@@ -1,0 +1,7 @@
+{
+  "parent": "artburgblocks:block/lawn",
+  "textures": {
+    "top": "artburgblocks:blocks/lawn_overgrown_top_3",
+    "overlay": "artburgblocks:blocks/lawn_overgrown_side_overlay"
+  }
+}

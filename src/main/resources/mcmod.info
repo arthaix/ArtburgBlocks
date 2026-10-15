@@ -1,0 +1,16 @@
+[
+{
+  "modid": "artburgblocks",
+  "name": "Artburg Blocks",
+  "description": "Blocks of the Artburg server: lawns of every kind — fresh rolled sod, mowed, striped, overgrown, dry, worn, newly seeded and grass pavers.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Aleksei Usenko (arthaix)"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

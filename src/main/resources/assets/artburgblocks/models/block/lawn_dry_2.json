@@ -1,0 +1,7 @@
+{
+  "parent": "artburgblocks:block/lawn",
+  "textures": {
+    "top": "artburgblocks:blocks/lawn_dry_top_2",
+    "overlay": "artburgblocks:blocks/lawn_dry_side_overlay"
+  }
+}
