@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "artburgblocks:blocks/clinker_running_dark_glazed_7_1"
+  }
+}

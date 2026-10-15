@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "artburgblocks:blocks/clinker_quarter_glazed_7_1"
+  }
+}

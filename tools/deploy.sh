@@ -48,6 +48,7 @@ if [ "$BUILD" = 1 ]; then
     python tools/gen_textures.py || die "texture generator failed"
     python tools/gen_granite.py > /dev/null || die "granite generator failed"
     python tools/gen_asphalt.py > /dev/null || die "asphalt generator failed"
+    python tools/gen_meta.py > /dev/null || die "meta block generator failed"
     ./gradlew build > build.log 2>&1 || die "gradle build failed, see build.log"
 fi
 [ -f "$JAR" ] || die "$JAR does not exist"

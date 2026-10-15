@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'ru.arthaix.artburgblocks'
-version = '1.2.0'
+version = '1.3.0'
 archivesBaseName = 'artburgblocks'
 
 // Minecraft 1.12.2 needs Java 8 bytecode (FML's ASM cannot read newer class files)

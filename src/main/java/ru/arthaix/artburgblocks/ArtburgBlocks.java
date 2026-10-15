@@ -23,7 +23,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @Mod.EventBusSubscriber(modid = ArtburgBlocks.MODID)
 public class ArtburgBlocks {
     public static final String MODID = "artburgblocks";
-    public static final String VERSION = "1.2.0";
+    public static final String VERSION = "1.3.0";
 
     public static final List<Block> BLOCKS = new ArrayList<>();
 
@@ -61,6 +61,7 @@ public class ArtburgBlocks {
         add(new BlockMarking("orange", MapColor.ADOBE));
         add(new BlockMarking("blue", MapColor.BLUE));
         add(new BlockMarking("red", MapColor.RED));
+        MetaBlocks.load().forEach(ArtburgBlocks::add);      // clinker, tiles ... from meta_blocks.json (tools/gen_meta.py)
     }
 
     private static void add(Block block) {
@@ -78,6 +79,7 @@ public class ArtburgBlocks {
     public static void registerItems(RegistryEvent.Register<Item> event) {
         for (Block block : BLOCKS) {
             event.getRegistry().register(block instanceof BlockMarking ? new ItemMarking((BlockMarking) block)
+                    : block instanceof BlockMeta ? new ItemMeta((BlockMeta) block)
                     : new ItemBlock(block).setRegistryName(block.getRegistryName()));
         }
     }
@@ -91,6 +93,10 @@ public class ArtburgBlocks {
                 for (BlockMarking.Wear w : BlockMarking.Wear.values()) {
                     ModelLoader.setCustomModelResourceLocation(item, w.ordinal(),
                             new ModelResourceLocation(block.getRegistryName(), "wear=" + w.getName()));
+                }
+            } else if (block instanceof BlockMeta) {      // one item per look
+                for (int i = 0; i < ((BlockMeta) block).looks(); i++) {
+                    ModelLoader.setCustomModelResourceLocation(item, i, new ModelResourceLocation(block.getRegistryName(), "v=" + i));
                 }
             } else {
                 ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));

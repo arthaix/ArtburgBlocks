@@ -1,0 +1,132 @@
+{
+  "variants": {
+    "v=0": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_0_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_0_1"
+      }
+    ],
+    "v=1": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_1_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_1_1"
+      }
+    ],
+    "v=2": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_2_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_2_1"
+      }
+    ],
+    "v=3": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_3_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_3_1"
+      }
+    ],
+    "v=4": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_4_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_4_1"
+      }
+    ],
+    "v=5": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_5_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_5_1"
+      }
+    ],
+    "v=6": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_6_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_6_1"
+      }
+    ],
+    "v=7": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_7_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_7_1"
+      }
+    ],
+    "v=8": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_8_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_8_1"
+      }
+    ],
+    "v=9": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_9_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_9_1"
+      }
+    ],
+    "v=10": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_10_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_10_1"
+      }
+    ],
+    "v=11": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_11_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_11_1"
+      }
+    ],
+    "v=12": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_12_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_12_1"
+      }
+    ],
+    "v=13": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_13_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_13_1"
+      }
+    ],
+    "v=14": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_14_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_14_1"
+      }
+    ],
+    "v=15": [
+      {
+        "model": "artburgblocks:clinker_quarter_fired_15_0"
+      },
+      {
+        "model": "artburgblocks:clinker_quarter_fired_15_1"
+      }
+    ]
+  }
+}
