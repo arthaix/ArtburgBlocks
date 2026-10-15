@@ -8,7 +8,7 @@ Lawns, all `artburgblocks:` — in the creative tab "Артбург":
 |---|---|
 | `lawn_sod` | Свежий рулонный газон — rolls run the way you look while placing |
 | `lawn_mowed` | Стриженый газон |
-| `lawn_striped` | Газон с полосами покоса — lanes run the way you look, light/dark by position |
+| `lawn_striped` | Газон с полосами покоса — lanes two blocks wide run the way you look, light/dark by position |
 | `lawn_overgrown` | Некошеная трава |
 | `lawn_dry` | Выгоревшая трава |
 | `lawn_worn` | Вытоптанный газон |

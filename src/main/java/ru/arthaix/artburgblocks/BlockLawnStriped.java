@@ -9,11 +9,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 /**
- * A lawn mown in lanes one block wide, light and dark in turn like a football pitch. The shade is not stored: it
- * follows from the position, so a whole lawn laid with one block comes out striped by itself.
+ * A lawn mown in lanes two blocks wide (one pass of a ride-on mower with a striping roller), light and dark in turn.
+ * The shade is not stored: it follows from the position, so a whole lawn laid with one block comes out striped by itself.
  */
 public class BlockLawnStriped extends BlockLawnAxis {
     public static final PropertyBool LIGHT = PropertyBool.create("light");
+    /** width of one mowing lane in blocks */
+    public static final int LANE = 2;
 
     public BlockLawnStriped(String name, MapColor color) {
         super(name, color);
@@ -29,6 +31,6 @@ public class BlockLawnStriped extends BlockLawnAxis {
     public IBlockState getActualState(IBlockState state, IBlockAccess world, BlockPos pos) {
         // lanes run along the axis, so they alternate across it
         int across = state.getValue(AXIS) == EnumFacing.Axis.Z ? pos.getX() : pos.getZ();
-        return state.withProperty(LIGHT, (across & 1) == 0);
+        return state.withProperty(LIGHT, (Math.floorDiv(across, LANE) & 1) == 0);
     }
 }
