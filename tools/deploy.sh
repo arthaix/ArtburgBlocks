@@ -41,9 +41,8 @@ CODE_VERSION=$(sed -n 's/.*String VERSION = "\([^"]*\)".*/\1/p' src/main/java/ru
 [ "$VERSION" = "$CODE_VERSION" ] || die "build.gradle says $VERSION but ArtburgBlocks.VERSION is $CODE_VERSION"
 NAME="artburgblocks-$VERSION.jar"
 JAR="build/libs/$NAME"
-BLOCKS=$(ls src/main/resources/assets/artburgblocks/blockstates | sed 's/\.json$//' | tr '\n' ' ')
 
-log "Artburg Blocks $VERSION: start (blocks: $BLOCKS)"
+log "Artburg Blocks $VERSION: start"
 if [ "$BUILD" = 1 ]; then
     python tools/gen_textures.py || die "texture generator failed"
     python tools/gen_granite.py > /dev/null || die "granite generator failed"
@@ -55,6 +54,9 @@ fi
 STAGED="$ROOT/build/$NAME.staged"            # a rebuild while we wait must not change what gets installed
 cp -f "$JAR" "$STAGED"
 log "jar $NAME $(sha256sum "$STAGED" | cut -c1-16)"
+# the blocks the test boot must find registered: those inside this jar, not the source tree, which may be ahead of it
+BLOCKS=$(unzip -Z1 "$STAGED" 'assets/artburgblocks/blockstates/*.json' | sed 's#.*/##; s/\.json$//' | tr '\n' ' ')
+log "blocks in the jar: $(echo $BLOCKS | wc -w)"
 
 # ---------------------------------------------------------------- server and game must be closed
 server_count() {
