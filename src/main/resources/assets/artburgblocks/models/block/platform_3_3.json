@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "artburgblocks:blocks/platform_3_3_top",
+    "side": "artburgblocks:blocks/platform_3_3_side",
+    "bottom": "artburgblocks:blocks/platform_3_3_side"
+  }
+}

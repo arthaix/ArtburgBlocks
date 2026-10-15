@@ -23,7 +23,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @Mod.EventBusSubscriber(modid = ArtburgBlocks.MODID)
 public class ArtburgBlocks {
     public static final String MODID = "artburgblocks";
-    public static final String VERSION = "1.3.0";
+    public static final String VERSION = "1.4.0";
 
     public static final List<Block> BLOCKS = new ArrayList<>();
 

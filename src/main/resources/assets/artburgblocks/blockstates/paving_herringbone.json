@@ -1,0 +1,228 @@
+{
+  "variants": {
+    "v=0": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=1": [
+      {
+        "model": "artburgblocks:paving_herringbone_1_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_1_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_1_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_1_3"
+      }
+    ],
+    "v=2": [
+      {
+        "model": "artburgblocks:paving_herringbone_2_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_2_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_2_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_2_3"
+      }
+    ],
+    "v=3": [
+      {
+        "model": "artburgblocks:paving_herringbone_3_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_3_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_3_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_3_3"
+      }
+    ],
+    "v=4": [
+      {
+        "model": "artburgblocks:paving_herringbone_4_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_4_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_4_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_4_3"
+      }
+    ],
+    "v=5": [
+      {
+        "model": "artburgblocks:paving_herringbone_5_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_5_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_5_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_5_3"
+      }
+    ],
+    "v=6": [
+      {
+        "model": "artburgblocks:paving_herringbone_6_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_6_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_6_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_6_3"
+      }
+    ],
+    "v=7": [
+      {
+        "model": "artburgblocks:paving_herringbone_7_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_7_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_7_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_7_3"
+      }
+    ],
+    "v=8": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=9": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=10": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=11": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=12": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=13": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=14": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ],
+    "v=15": [
+      {
+        "model": "artburgblocks:paving_herringbone_0_0"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_1"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_2"
+      },
+      {
+        "model": "artburgblocks:paving_herringbone_0_3"
+      }
+    ]
+  }
+}

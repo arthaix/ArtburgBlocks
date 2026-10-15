@@ -1,0 +1,228 @@
+{
+  "variants": {
+    "v=0": [
+      {
+        "model": "artburgblocks:profiled_sheet_0_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_3"
+      }
+    ],
+    "v=1": [
+      {
+        "model": "artburgblocks:profiled_sheet_1_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_1_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_1_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_1_3"
+      }
+    ],
+    "v=2": [
+      {
+        "model": "artburgblocks:profiled_sheet_2_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_2_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_2_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_2_3"
+      }
+    ],
+    "v=3": [
+      {
+        "model": "artburgblocks:profiled_sheet_3_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_3_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_3_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_3_3"
+      }
+    ],
+    "v=4": [
+      {
+        "model": "artburgblocks:profiled_sheet_4_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_4_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_4_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_4_3"
+      }
+    ],
+    "v=5": [
+      {
+        "model": "artburgblocks:profiled_sheet_5_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_5_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_5_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_5_3"
+      }
+    ],
+    "v=6": [
+      {
+        "model": "artburgblocks:profiled_sheet_6_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_6_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_6_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_6_3"
+      }
+    ],
+    "v=7": [
+      {
+        "model": "artburgblocks:profiled_sheet_7_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_7_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_7_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_7_3"
+      }
+    ],
+    "v=8": [
+      {
+        "model": "artburgblocks:profiled_sheet_8_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_8_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_8_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_8_3"
+      }
+    ],
+    "v=9": [
+      {
+        "model": "artburgblocks:profiled_sheet_9_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_9_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_9_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_9_3"
+      }
+    ],
+    "v=10": [
+      {
+        "model": "artburgblocks:profiled_sheet_10_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_10_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_10_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_10_3"
+      }
+    ],
+    "v=11": [
+      {
+        "model": "artburgblocks:profiled_sheet_11_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_11_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_11_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_11_3"
+      }
+    ],
+    "v=12": [
+      {
+        "model": "artburgblocks:profiled_sheet_0_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_3"
+      }
+    ],
+    "v=13": [
+      {
+        "model": "artburgblocks:profiled_sheet_0_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_3"
+      }
+    ],
+    "v=14": [
+      {
+        "model": "artburgblocks:profiled_sheet_0_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_3"
+      }
+    ],
+    "v=15": [
+      {
+        "model": "artburgblocks:profiled_sheet_0_0"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_1"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_2"
+      },
+      {
+        "model": "artburgblocks:profiled_sheet_0_3"
+      }
+    ]
+  }
+}

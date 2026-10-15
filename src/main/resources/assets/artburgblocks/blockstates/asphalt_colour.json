@@ -1,0 +1,228 @@
+{
+  "variants": {
+    "v=0": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=1": [
+      {
+        "model": "artburgblocks:asphalt_colour_1_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_1_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_1_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_1_3"
+      }
+    ],
+    "v=2": [
+      {
+        "model": "artburgblocks:asphalt_colour_2_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_2_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_2_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_2_3"
+      }
+    ],
+    "v=3": [
+      {
+        "model": "artburgblocks:asphalt_colour_3_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_3_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_3_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_3_3"
+      }
+    ],
+    "v=4": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=5": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=6": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=7": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=8": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=9": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=10": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=11": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=12": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=13": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=14": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ],
+    "v=15": [
+      {
+        "model": "artburgblocks:asphalt_colour_0_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_colour_0_3"
+      }
+    ]
+  }
+}

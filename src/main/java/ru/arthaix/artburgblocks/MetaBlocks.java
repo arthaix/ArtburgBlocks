@@ -31,9 +31,14 @@ final class MetaBlocks {
                 for (int i = 0; i < looks.length; i++) {
                     looks[i] = ls.get(i).getAsString();
                 }
-                out.add(new BlockMeta(o.get("name").getAsString(), material(o.get("material").getAsString()),
-                        mapColor(o.get("map").getAsString()), sound(o.get("sound").getAsString()),
-                        o.get("hardness").getAsFloat(), looks));
+                String name = o.get("name").getAsString();
+                Material material = material(o.get("material").getAsString());
+                MapColor map = mapColor(o.get("map").getAsString());
+                SoundType sound = sound(o.get("sound").getAsString());
+                float hardness = o.get("hardness").getAsFloat();
+                boolean cutout = o.has("cutout") && o.get("cutout").getAsBoolean();
+                out.add(cutout ? new BlockMetaCutout(name, material, map, sound, hardness, looks)
+                        : new BlockMeta(name, material, map, sound, hardness, looks));
             }
         } catch (Exception ex) {
             throw new IllegalStateException("Artburg Blocks: cannot read meta_blocks.json", ex);

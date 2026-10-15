@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "artburgblocks:blocks/street_utility_1_0_top",
+    "side": "artburgblocks:blocks/street_utility_1_0_side",
+    "bottom": "artburgblocks:blocks/street_utility_1_0_side"
+  }
+}

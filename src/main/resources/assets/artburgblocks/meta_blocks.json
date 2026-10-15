@@ -50,28 +50,28 @@
     ]
   },
   {
-    "name": "clinker_running_fired",
+    "name": "clinker_running_more",
     "material": "rock",
     "sound": "stone",
     "hardness": 1.5,
     "map": "red",
     "looks": [
-      "smoked",
-      "flamed_red",
-      "flamed_brown",
-      "flamed_straw",
-      "whitewash",
-      "antique",
-      "mix_autumn",
-      "mix_slate",
-      "mix_desert",
-      "mix_city",
-      "mix_wine",
-      "mix_ash",
-      "mix_latte",
-      "mix_emerald",
-      "mix_sea",
-      "mix_contrast"
+      "cream",
+      "peach",
+      "honey",
+      "caramel",
+      "brick_orange",
+      "dark_cherry",
+      "coffee",
+      "mocha",
+      "taupe",
+      "pearl",
+      "smoky",
+      "blue_grey",
+      "steel_blue",
+      "olive",
+      "forest",
+      "whitewash"
     ]
   },
   {
@@ -125,28 +125,28 @@
     ]
   },
   {
-    "name": "clinker_running_dark_fired",
+    "name": "clinker_running_dark_more",
     "material": "rock",
     "sound": "stone",
     "hardness": 1.5,
     "map": "red",
     "looks": [
-      "smoked",
-      "flamed_red",
-      "flamed_brown",
-      "flamed_straw",
-      "whitewash",
-      "antique",
-      "mix_autumn",
-      "mix_slate",
-      "mix_desert",
-      "mix_city",
-      "mix_wine",
-      "mix_ash",
-      "mix_latte",
-      "mix_emerald",
-      "mix_sea",
-      "mix_contrast"
+      "cream",
+      "peach",
+      "honey",
+      "caramel",
+      "brick_orange",
+      "dark_cherry",
+      "coffee",
+      "mocha",
+      "taupe",
+      "pearl",
+      "smoky",
+      "blue_grey",
+      "steel_blue",
+      "olive",
+      "forest",
+      "whitewash"
     ]
   },
   {
@@ -200,28 +200,28 @@
     ]
   },
   {
-    "name": "clinker_quarter_fired",
+    "name": "clinker_quarter_more",
     "material": "rock",
     "sound": "stone",
     "hardness": 1.5,
     "map": "red",
     "looks": [
-      "smoked",
-      "flamed_red",
-      "flamed_brown",
-      "flamed_straw",
-      "whitewash",
-      "antique",
-      "mix_autumn",
-      "mix_slate",
-      "mix_desert",
-      "mix_city",
-      "mix_wine",
-      "mix_ash",
-      "mix_latte",
-      "mix_emerald",
-      "mix_sea",
-      "mix_contrast"
+      "cream",
+      "peach",
+      "honey",
+      "caramel",
+      "brick_orange",
+      "dark_cherry",
+      "coffee",
+      "mocha",
+      "taupe",
+      "pearl",
+      "smoky",
+      "blue_grey",
+      "steel_blue",
+      "olive",
+      "forest",
+      "whitewash"
     ]
   },
   {
@@ -275,28 +275,308 @@
     ]
   },
   {
-    "name": "clinker_stack_fired",
+    "name": "clinker_stack_more",
     "material": "rock",
     "sound": "stone",
     "hardness": 1.5,
     "map": "red",
     "looks": [
-      "smoked",
-      "flamed_red",
-      "flamed_brown",
-      "flamed_straw",
-      "whitewash",
-      "antique",
-      "mix_autumn",
-      "mix_slate",
-      "mix_desert",
-      "mix_city",
-      "mix_wine",
-      "mix_ash",
-      "mix_latte",
-      "mix_emerald",
-      "mix_sea",
-      "mix_contrast"
+      "cream",
+      "peach",
+      "honey",
+      "caramel",
+      "brick_orange",
+      "dark_cherry",
+      "coffee",
+      "mocha",
+      "taupe",
+      "pearl",
+      "smoky",
+      "blue_grey",
+      "steel_blue",
+      "olive",
+      "forest",
+      "whitewash"
     ]
+  },
+  {
+    "name": "curb",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "granite_grey",
+      "granite_red",
+      "granite_black",
+      "concrete",
+      "concrete_old",
+      "white",
+      "white_peeling",
+      "black",
+      "yellow",
+      "yellow_peeling"
+    ]
+  },
+  {
+    "name": "paving_brick_x",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "grey",
+      "dark_grey",
+      "red",
+      "brown",
+      "yellow",
+      "sand",
+      "black",
+      "white"
+    ]
+  },
+  {
+    "name": "paving_brick_z",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "grey",
+      "dark_grey",
+      "red",
+      "brown",
+      "yellow",
+      "sand",
+      "black",
+      "white"
+    ]
+  },
+  {
+    "name": "paving_herringbone",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "grey",
+      "dark_grey",
+      "red",
+      "brown",
+      "yellow",
+      "sand",
+      "black",
+      "white"
+    ]
+  },
+  {
+    "name": "paving_square",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "grey",
+      "dark_grey",
+      "red",
+      "sand",
+      "black",
+      "white"
+    ]
+  },
+  {
+    "name": "paving_small",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "grey",
+      "dark_grey",
+      "red",
+      "sand",
+      "black",
+      "white"
+    ]
+  },
+  {
+    "name": "tactile",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "yellow_dots",
+      "yellow_lines_x",
+      "yellow_lines_z",
+      "grey_dots",
+      "grey_lines_x",
+      "grey_lines_z"
+    ]
+  },
+  {
+    "name": "setts",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "grey",
+      "grey_old",
+      "red",
+      "black",
+      "wet"
+    ]
+  },
+  {
+    "name": "street_utility",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "manhole_asphalt",
+      "manhole_pavers",
+      "manhole_concrete",
+      "grate_asphalt",
+      "grate_pavers",
+      "drain_x",
+      "drain_z"
+    ]
+  },
+  {
+    "name": "asphalt_colour",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "red",
+      "terracotta",
+      "green",
+      "blue"
+    ]
+  },
+  {
+    "name": "panel",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "concrete_grey",
+      "concrete_beige",
+      "pebble_grey",
+      "pebble_brown",
+      "pebble_white",
+      "tile_white",
+      "tile_blue",
+      "tile_beige",
+      "tile_brick",
+      "seam_top",
+      "seam_left"
+    ]
+  },
+  {
+    "name": "wall_brick",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "red",
+    "looks": [
+      "silicate",
+      "silicate_grey",
+      "silicate_sooty",
+      "red",
+      "red_old",
+      "red_sooty",
+      "yellow",
+      "brown",
+      "cream",
+      "dark_red"
+    ]
+  },
+  {
+    "name": "profiled_sheet",
+    "material": "iron",
+    "sound": "metal",
+    "hardness": 2.0,
+    "map": "iron",
+    "looks": [
+      "white",
+      "light_grey",
+      "graphite",
+      "blue",
+      "green",
+      "wine",
+      "brown",
+      "galvanized",
+      "yellow",
+      "orange",
+      "sand",
+      "red"
+    ]
+  },
+  {
+    "name": "glass_facade",
+    "material": "rock",
+    "sound": "glass",
+    "hardness": 1.0,
+    "map": "blue",
+    "looks": [
+      "blue",
+      "bronze",
+      "silver",
+      "green",
+      "graphite",
+      "clear",
+      "blue_flush",
+      "silver_flush",
+      "graphite_flush"
+    ]
+  },
+  {
+    "name": "concrete_wall",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "smooth",
+      "boards",
+      "ties",
+      "old",
+      "rust",
+      "white",
+      "dark"
+    ]
+  },
+  {
+    "name": "platform",
+    "material": "rock",
+    "sound": "stone",
+    "hardness": 1.5,
+    "map": "stone",
+    "looks": [
+      "plain",
+      "edge_n",
+      "edge_e",
+      "edge_s",
+      "edge_w"
+    ]
+  },
+  {
+    "name": "grating",
+    "material": "iron",
+    "sound": "metal",
+    "hardness": 2.0,
+    "map": "iron",
+    "looks": [
+      "galvanized",
+      "black",
+      "yellow",
+      "rusty"
+    ],
+    "cutout": true
   }
 ]

@@ -68,35 +68,34 @@ SHADES = {
     'steel': ('графит металлик', 'Graphite Metallic', (64, 66, 70), 'metal', None),
     'black_glazed': ('чёрный глянцевый', 'Black Gloss', (22, 22, 24), 'glazed', None),
     'white_glazed': ('белый глянцевый', 'White Gloss', (236, 234, 228), 'glazed', None),
-    # fired effects
-    'smoked': ('угольный обжиг', 'Coal Fired', (82, 62, 52), 'matte', 'smoked'),
-    'flamed_red': ('красный с подпалинами', 'Flamed Red', (150, 60, 42), 'matte', 'flamed'),
-    'flamed_brown': ('коричневый с подпалинами', 'Flamed Brown', (120, 78, 52), 'matte', 'flamed'),
-    'flamed_straw': ('соломенный с подпалинами', 'Flamed Straw', (204, 170, 104), 'matte', 'flamed'),
-    'whitewash': ('белёный', 'Whitewashed', (160, 70, 50), 'matte', 'whitewash'),
-    'antique': ('состаренный', 'Antique', (168, 92, 62), 'matte', 'antique'),
+    # more single tones, matte
+    'cream': ('кремовый', 'Cream', (226, 206, 168), 'matte', None),
+    'peach': ('персиковый', 'Peach', (214, 156, 120), 'matte', None),
+    'honey': ('медовый', 'Honey', (196, 140, 64), 'matte', None),
+    'caramel': ('карамельный', 'Caramel', (164, 106, 60), 'matte', None),
+    'brick_orange': ('кирпично-оранжевый', 'Brick Orange', (196, 100, 56), 'matte', None),
+    'dark_cherry': ('тёмная вишня', 'Dark Cherry', (86, 34, 36), 'matte', None),
+    'coffee': ('кофейный', 'Coffee', (96, 66, 50), 'matte', None),
+    'mocha': ('мокко', 'Mocha', (132, 104, 86), 'matte', None),
+    'taupe': ('серо-коричневый', 'Taupe', (120, 108, 98), 'matte', None),
+    'pearl': ('жемчужно-серый', 'Pearl Grey', (190, 188, 182), 'matte', None),
+    'smoky': ('дымчатый', 'Smoky', (112, 112, 116), 'matte', None),
+    'blue_grey': ('серо-голубой', 'Blue Grey', (108, 122, 136), 'matte', None),
+    'steel_blue': ('стальной синий', 'Steel Blue', (62, 82, 108), 'matte', None),
+    'olive': ('оливковый', 'Olive', (110, 108, 70), 'matte', None),
+    'forest': ('тёмно-зелёный', 'Forest Green', (44, 66, 50), 'matte', None),
+    'whitewash': ('белёный', 'Whitewashed', (206, 190, 176), 'matte', None),
 }
-MIXES = {
-    'mix_autumn': ('смесь «осень»', 'Autumn Mix', [('terracotta', 3), ('red', 3), ('brown', 2), ('chocolate', 2), ('burgundy', 1)]),
-    'mix_slate': ('смесь «сланец»', 'Slate Mix', [('light_grey', 2), ('graphite', 3), ('anthracite', 3)]),
-    'mix_desert': ('смесь «пустыня»', 'Desert Mix', [('straw', 2), ('sand', 3), ('ochre', 2), ('salmon', 2), ('terracotta', 1)]),
-    'mix_city': ('смесь «квартал»', 'City Mix', [('sand', 1), ('salmon', 1), ('terracotta', 3), ('red', 3), ('burgundy', 2),
-                                                ('brown', 2), ('chocolate', 2), ('graphite', 1), ('anthracite', 2)]),
-    'mix_wine': ('смесь «вино»', 'Wine Mix', [('red', 2), ('burgundy', 3), ('chocolate', 2)]),
-    'mix_ash': ('смесь «пепел»', 'Ash Mix', [('white', 2), ('light_grey', 3), ('greige', 2)]),
-    'mix_latte': ('смесь «латте»', 'Latte Mix', [('ivory', 2), ('sand', 2), ('greige', 2), ('brown', 1)]),
-    'mix_emerald': ('смесь «изумруд и чёрный»', 'Emerald and Black Mix', [('emerald', 3), ('bottle', 2), ('black_glazed', 2)]),
-    'mix_sea': ('смесь «море»', 'Sea Mix', [('cobalt', 2), ('navy', 3), ('petrol', 2), ('turquoise', 1)]),
-    'mix_contrast': ('смесь «чёрное и белое»', 'Black and White Mix', [('black', 1), ('white', 1)]),
-}
+MIXES = {}                  # the owner: no multicolour mixes, a block is one colour
 PALETTES = [
     ('', 'матовый', 'Matte', ['white', 'ivory', 'straw', 'sand', 'greige', 'ochre', 'salmon', 'terracotta', 'red',
                               'burgundy', 'brown', 'chocolate', 'light_grey', 'graphite', 'anthracite', 'black']),
     ('_glazed', 'глазурованный', 'Glazed', ['emerald', 'bottle', 'malachite', 'sage', 'petrol', 'turquoise', 'cobalt',
                                            'navy', 'bordeaux', 'cherry', 'mustard', 'copper', 'bronze', 'steel',
                                            'black_glazed', 'white_glazed']),
-    ('_fired', 'обжиг и смеси', 'Fired and Mixes', ['smoked', 'flamed_red', 'flamed_brown', 'flamed_straw', 'whitewash',
-                                                    'antique'] + list(MIXES)),
+    ('_more', 'ещё оттенки', 'More Shades', ['cream', 'peach', 'honey', 'caramel', 'brick_orange', 'dark_cherry', 'coffee',
+                                             'mocha', 'taupe', 'pearl', 'smoky', 'blue_grey', 'steel_blue', 'olive',
+                                             'forest', 'whitewash']),
 ]
 CLINKER_VARIANTS = 2        # 12 blocks x 16 looks of 96 px: two variants each keep the texture atlas sane
 JOINTS = {'light': np.array((164, 160, 152), float), 'dark': np.array((58, 56, 54), float)}
@@ -121,32 +120,14 @@ def bricks(bond):
 
 
 def brick_texels(r, base, finish, effect, w, h):
-    """The face of one brick, (h-1) x (w-1) texels, joints not included; NaN where an edge broke off.
-    One flat colour per brick (the owner: no gradients inside a brick), only the fine grain of the material on it;
-    the effects pick the colour of the whole brick."""
+    """The face of one brick, (h-1) x (w-1) texels, joints not included: one tone (RULES.md), bricks differ from
+    each other only a little, a faint grain on each."""
     sat = (base.max() - base.min()) / max(base.max(), 1)          # greys get almost no hue drift
-    spread = 0.08 if finish != 'matte' else 0.06                  # glaze thickness varies more than fired clay
-    c = base * (1 + r.normal(0, spread)) * (1 + r.normal(0, 0.004 + 0.03 * sat, 3))
-    if effect == 'flamed' and r.random() < 0.45:                  # a brick that lay in the flame: darker all over
-        c = c * r.uniform(0.45, 0.7)
-    elif effect == 'smoked':
-        c = c * r.uniform(0.5, 1.0)
-    elif effect == 'whitewash':
-        a = np.clip(0.4 + r.normal(0, 0.15), 0.1, 0.8)
-        c = c * (1 - a) + np.array((228, 224, 214)) * a
-    elif effect == 'antique':
-        c = c * r.uniform(0.85, 1.0)
-    hh, ww = h - 1, w - 1
-    t = c * (1 + r.normal(0, 0.008 if finish != 'matte' else 0.012, (hh, ww, 1)))   # nearly one tone: a faint grain
+    spread = 0.06 if finish != 'matte' else 0.045
+    c = base * (1 + r.normal(0, spread)) * (1 + r.normal(0, 0.003 + 0.02 * sat, 3))
+    t = c * (1 + r.normal(0, 0.008 if finish != 'matte' else 0.012, (h - 1, w - 1, 1)))
     if finish == 'metal':
-        t[r.random((hh, ww)) < 0.06] *= 1.08                      # faint metallic flecks
-    if effect == 'antique':
-        chip = np.zeros((hh, ww), bool)
-        chip[0] |= r.random(ww) < 0.25
-        chip[-1] |= r.random(ww) < 0.25
-        chip[:, 0] |= r.random(hh) < 0.4
-        chip[:, -1] |= r.random(hh) < 0.4
-        t[chip] = np.nan                                          # the joint shows where an edge broke off
+        t[r.random((h - 1, w - 1)) < 0.06] *= 1.08                # faint metallic flecks
     return t
 
 
@@ -191,9 +172,486 @@ def clinker_family():
     return out
 
 
+# ================================================================ road and pavement
+
+import gen_asphalt as GA     # the asphalt kinds, for what lies around a manhole or a grate
+
+
+def grain(r, n, colour, amount):
+    return np.array(colour, float) * (1 + r.normal(0, amount, (n, n, 1)))
+
+
+def speckled(r, n, palette):
+    """Granite: every texel one of the palette's grains, (colour, weight)."""
+    cols = np.array([c for c, _ in palette], float)
+    p = np.array([w for _, w in palette], float)
+    return cols[r.choice(len(cols), size=(n, n), p=p / p.sum())]
+
+
+def blobs(r, n, sigma, cover):
+    s_ = ndi.gaussian_filter(r.random((n, n)), sigma, mode='wrap')
+    return s_ > np.quantile(s_, 1 - cover)
+
+
+# ---- curb stones (32 px)
+GRANITES = {
+    'grey': [((134, 134, 132), 3), ((150, 150, 148), 5), ((164, 162, 158), 3), ((108, 108, 108), 1)],
+    'red': [((160, 102, 88), 4), ((174, 118, 102), 3), ((132, 82, 72), 2), ((190, 150, 138), 1)],
+    'black': [((48, 48, 50), 4), ((60, 60, 62), 3), ((72, 72, 74), 2), ((38, 38, 40), 2)],
+}
+CURB_LOOKS = [
+    ('granite_grey', 'гранит серый', 'Grey Granite'), ('granite_red', 'гранит красный', 'Red Granite'),
+    ('granite_black', 'гранит чёрный', 'Black Granite'), ('concrete', 'бетон', 'Concrete'),
+    ('concrete_old', 'бетон старый', 'Old Concrete'), ('white', 'побелённый', 'Whitewashed'),
+    ('white_peeling', 'побелка облезла', 'Peeling Whitewash'), ('black', 'крашеный чёрный', 'Painted Black'),
+    ('yellow', 'крашеный жёлтый', 'Painted Yellow'), ('yellow_peeling', 'жёлтый облез', 'Peeling Yellow'),
+]
+
+
+def curb(look, v):
+    n, r = 32, rng('curb', look, v)
+    lid = CURB_LOOKS[look][0]
+    concrete = grain(r, n, (166, 164, 158), 0.03)
+    concrete[r.random((n, n)) < 0.02] *= 0.7                       # pores
+    if lid.startswith('granite'):
+        return speckled(r, n, GRANITES[lid.split('_')[1]])
+    if lid == 'concrete':
+        return concrete
+    if lid == 'concrete_old':
+        img = concrete * 0.8
+        img[blobs(r, n, 2.0, 0.3)] *= 0.85
+        return img
+    paint = {'white': (232, 232, 226), 'black': (38, 38, 40), 'yellow': (222, 184, 40)}[lid.split('_')[0]]
+    img = grain(r, n, paint, 0.02)
+    if lid.endswith('peeling'):
+        gone = blobs(r, n, 1.4, 0.3)
+        img[gone] = concrete[gone] * 0.85
+    return img
+
+
+# ---- concrete pavers (64 px)
+PAVER = {'grey': (150, 150, 148), 'dark_grey': (98, 98, 100), 'red': (150, 70, 60), 'brown': (110, 76, 56),
+         'yellow': (200, 170, 92), 'sand': (190, 176, 142), 'black': (56, 56, 58), 'white': (212, 210, 202)}
+PAVER_RU = {'grey': ('серый', 'Grey'), 'dark_grey': ('тёмно-серый', 'Dark Grey'), 'red': ('красный', 'Red'),
+            'brown': ('коричневый', 'Brown'), 'yellow': ('жёлтый', 'Yellow'), 'sand': ('песочный', 'Sand'),
+            'black': ('чёрный', 'Black'), 'white': ('белый', 'White')}
+PAVER_MIXES = {}            # no multicolour mixes (RULES.md)
+PJOINT = np.array((132, 126, 112), float)
+PN = 64
+
+
+def pave_bricks(pattern):
+    """Pavers 16 x 8 px = 250 x 125 mm on the 64 px torus."""
+    out = []
+    if pattern in ('x', 'z'):
+        out = [((k * 16 + (r_ % 2) * 8) % PN, r_ * 8, 16, 8) for r_ in range(PN // 8) for k in range(PN // 16)]
+    elif pattern == 'herringbone':
+        seen = set()
+        for i in range(-16, 16):
+            for j in range(-16, 16):
+                ox, oy = (i * 8 + j * 16) % PN, (i * 8 - j * 16) % PN
+                for b in ((ox, oy, 16, 8), (ox, (oy + 8) % PN, 8, 16)):
+                    if b not in seen:
+                        seen.add(b)
+                        out.append(b)
+    elif pattern in ('square', 'small'):
+        k = 32 if pattern == 'square' else 16
+        out = [(x, y, k, k) for y in range(0, PN, k) for x in range(0, PN, k)]
+    if pattern == 'z':
+        out = [(y, x, h, w) for (x, y, w, h) in out]
+    return out
+
+
+def pavers(pattern, looks, look, v):
+    img = PJOINT * (1 + rng('pj', pattern, look, v).normal(0, 0.04, (PN, PN, 1)))
+    lid = looks[look][0]
+    for n_, (x0, y0, w, h) in enumerate(pave_bricks(pattern)):
+        crosses = x0 + w > PN or y0 + h > PN
+        r = rng('pv', pattern, look, n_) if crosses else rng('pv', pattern, look, n_, v)
+        one = lid
+        if lid in PAVER_MIXES:
+            mix = PAVER_MIXES[lid][2]
+            p_ = np.array([m[1] for m in mix], float)
+            one = mix[r.choice(len(mix), p=p_ / p_.sum())][0]
+        c = np.array(PAVER[one], float) * (1 + r.normal(0, 0.04))
+        t = c * (1 + r.normal(0, 0.02, (h - 1, w - 1, 1)))
+        img[np.ix_(np.arange(y0, y0 + h - 1) % PN, np.arange(x0, x0 + w - 1) % PN)] = t
+    return img
+
+
+def paver_looks(colours, mixes=True):
+    out = [(c, PAVER_RU[c][0], PAVER_RU[c][1]) for c in colours]
+    if mixes:
+        out += [(k, m[0], m[1]) for k, m in PAVER_MIXES.items()]
+    return out
+
+
+# ---- tactile tiles (64 px, two 500 mm tiles a block)
+TACTILE_LOOKS = [('yellow_dots', 'жёлтая, конусы', 'Yellow, Dots'), ('yellow_lines_x', 'жёлтая, полосы вдоль X', 'Yellow, Lines along X'),
+                 ('yellow_lines_z', 'жёлтая, полосы вдоль Z', 'Yellow, Lines along Z'), ('grey_dots', 'серая, конусы', 'Grey, Dots'),
+                 ('grey_lines_x', 'серая, полосы вдоль X', 'Grey, Lines along X'), ('grey_lines_z', 'серая, полосы вдоль Z', 'Grey, Lines along Z')]
+
+
+def tactile(look, v):
+    lid = TACTILE_LOOKS[look][0]
+    r = rng('tactile', look, v)
+    base = (214, 176, 40) if lid.startswith('yellow') else (150, 150, 148)
+    img = grain(r, PN, base, 0.015)
+    img[:, ::32] = PJOINT
+    img[::32, :] = PJOINT
+    top = np.minimum(np.array(base, float) * 1.12 + 10, 255)
+    low = np.array(base, float) * 0.72
+    yy, xx = np.mgrid[0:PN, 0:PN]
+    if lid.endswith('dots'):                                      # truncated domes on a 8 px grid
+        for cy in range(4, PN, 8):
+            for cx in range(4, PN, 8):
+                d = (yy - cy) ** 2 + (xx - cx) ** 2
+                img[(d <= 5) & (d > 2)] = low if False else img[(d <= 5) & (d > 2)]
+                img[d <= 4] = top
+                img[(yy == cy + 2) & (abs(xx - cx) <= 1)] = low     # the shadow under the dome
+    else:                                                        # long bars 3 px wide every 8 px
+        across = xx if lid.endswith('_z') else yy
+        along = yy if lid.endswith('_z') else xx
+        bar = ((across % 8) >= 3) & ((across % 8) < 6) & ((along % 32) > 2) & ((along % 32) < 30)
+        img[bar] = top
+        shadow = ((across % 8) == 6) & ((along % 32) > 2) & ((along % 32) < 30)
+        img[shadow] = low
+    return img
+
+
+# ---- granite setts (64 px): rows 8 px = 125 mm, stones of uneven length
+SETTS = {'grey': GRANITES['grey'], 'red': GRANITES['red'], 'black': GRANITES['black']}
+SETT_LOOKS = [('grey', 'серая', 'Grey'), ('grey_old', 'серая старая', 'Old Grey'), ('red', 'красная', 'Red'),
+              ('black', 'чёрная', 'Black'), ('wet', 'мокрая', 'Wet')]
+
+
+def setts(look, v):
+    lid = SETT_LOOKS[look][0]
+    rows = rng('sett-rows')                                       # the layout is the same in every variant
+    joint = 2 if lid == 'grey_old' else 1
+    img = np.zeros((PN, PN, 3))
+    img[:] = (70, 66, 60) if lid != 'wet' else (40, 38, 36)
+    for row in range(PN // 8):
+        x = int(rows.integers(0, 10))
+        widths = []
+        while sum(widths) < PN:
+            widths.append(int(rows.integers(6, 11)))
+        widths[-1] -= sum(widths) - PN
+        if widths[-1] < 4:
+            widths[-2] += widths[-1]
+            widths.pop()
+        for k, w in enumerate(widths):
+            crosses = x + w > PN
+            r = rng('sett', look, row, k) if crosses else rng('sett', look, row, k, v)
+            kind = lid if lid in SETTS else 'grey' if lid in ('grey_old', 'wet') else ('grey' if r.random() < 0.6 else 'red')
+            tone = 1 + r.normal(0, 0.07)
+            stone = speckled(r, 16, SETTS[kind])[:8 - joint, :max(1, w - joint)] * tone
+            if lid == 'grey_old':
+                stone *= 0.85
+            if lid == 'wet':
+                stone = stone * 0.62
+            ys = np.arange(row * 8, row * 8 + 8 - joint)
+            xs = np.arange(x, x + w - joint) % PN
+            img[np.ix_(ys, xs)] = stone[:, :len(xs)]
+            x = (x + w) % PN
+    return img
+
+
+# ---- manholes, grates, drains (64 px top, the sides the material around)
+UTIL_LOOKS = [('manhole_asphalt', 'люк в асфальте', 'Manhole in Asphalt'), ('manhole_pavers', 'люк в плитке', 'Manhole in Pavers'),
+              ('manhole_concrete', 'люк в бетоне', 'Manhole in Concrete'), ('grate_asphalt', 'ливневая решётка в асфальте', 'Storm Grate in Asphalt'),
+              ('grate_pavers', 'ливневая решётка в плитке', 'Storm Grate in Pavers'), ('drain_x', 'лоток вдоль X', 'Drain Channel along X'),
+              ('drain_z', 'лоток вдоль Z', 'Drain Channel along Z')]
+IRON = np.array((64, 62, 60), float)
+
+
+def asphalt64(r_seed):
+    t = GA.k_normal(rng('asph', r_seed))
+    return np.tile(t, (2, 2, 1))
+
+
+def utility(look, v):
+    lid = UTIL_LOOKS[look][0]
+    r = rng('util', look, v)
+    if lid.endswith('asphalt'):
+        base = asphalt64(('u', look, v))
+    elif lid.endswith('pavers'):
+        base = pavers('small', paver_looks(['grey'], False), 0, v)
+    else:
+        base = grain(r, PN, (160, 158, 152), 0.03)
+    top = base.copy()
+    yy, xx = np.mgrid[0:PN, 0:PN]
+    if lid.startswith('manhole'):
+        d = np.sqrt((yy - 31.5) ** 2 + (xx - 31.5) ** 2)
+        top[d < 22] = IRON * 0.8                                  # the frame
+        cover = d < 20
+        top[cover] = IRON * (1 + r.normal(0, 0.03, (cover.sum(), 1)))
+        rib = cover & ((np.abs(((d + 1) % 5) - 2.5) < 0.8) | (np.abs(xx - 31.5) < 1) | (np.abs(yy - 31.5) < 1))
+        top[rib] = IRON * 1.3                                     # rings and a cross cast on top
+        top[(np.abs(d - 13) < 1.5) & (np.abs(xx - 31.5) > 9)] = IRON * 0.45   # the two lifting holes
+    elif lid.startswith('grate'):
+        box = (np.abs(yy - 31.5) < 13) & (np.abs(xx - 31.5) < 22)
+        top[box] = IRON * 0.85
+        slot = box & (np.abs(yy - 31.5) < 11) & (np.abs(xx - 31.5) < 20) & ((xx % 4) < 2)
+        top[slot] = (18, 18, 18)
+    else:
+        across = yy if lid.endswith('_x') else xx
+        along = xx if lid.endswith('_x') else yy
+        chan = np.abs(across - 31.5) < 10
+        top[chan] = grain(r, PN, (128, 126, 120), 0.03)[chan]     # the concrete trough
+        grate = np.abs(across - 31.5) < 6
+        top[grate] = IRON * 0.9
+        top[grate & ((along % 4) < 2)] = (18, 18, 18)              # slots across the channel
+    return {'top': top, 'side': base}
+
+
+# ---- coloured asphalt for bus and bike lanes (32 px)
+COLOUR_ASPHALT = [('red', 'красный (автобусная полоса)', 'Red (Bus Lane)', (150, 58, 48)),
+                  ('terracotta', 'терракотовый', 'Terracotta', (160, 86, 60)),
+                  ('green', 'зелёный (велодорожка)', 'Green (Bike Lane)', (66, 112, 62)),
+                  ('blue', 'синий', 'Blue', (58, 86, 136))]
+
+
+def colour_asphalt(look, v):
+    g = GA.k_normal(rng('casph', look, v)).mean(-1, keepdims=True)
+    g = 53 + (g - 53) * 0.45                                      # the stones show, but only faintly through the colour
+    return g / 53.0 * np.array(COLOUR_ASPHALT[look][3], float) * 0.85
+
+
+def road_family():
+    st = {'material': 'rock', 'sound': 'stone', 'hardness': 1.5, 'map': 'stone'}
+    all_pavers = paver_looks(list(PAVER))
+    sq = paver_looks(['grey', 'dark_grey', 'red', 'sand', 'black', 'white'], False)
+    fams = [
+        ('curb', 'Бордюр', 'Curb', [(l[0], l[1], l[2]) for l in CURB_LOOKS], curb),
+        ('paving_brick_x', 'Тротуарная плитка «кирпичик» вдоль X', 'Paving Bricks along X', all_pavers,
+         lambda lk, v: pavers('x', all_pavers, lk, v)),
+        ('paving_brick_z', 'Тротуарная плитка «кирпичик» вдоль Z', 'Paving Bricks along Z', all_pavers,
+         lambda lk, v: pavers('z', all_pavers, lk, v)),
+        ('paving_herringbone', 'Тротуарная плитка ёлочкой', 'Paving Herringbone', all_pavers,
+         lambda lk, v: pavers('herringbone', all_pavers, lk, v)),
+        ('paving_square', 'Плита 500×500', 'Paving Slab 500', sq, lambda lk, v: pavers('square', sq, lk, v)),
+        ('paving_small', 'Плитка 250×250', 'Paving Tile 250', sq, lambda lk, v: pavers('small', sq, lk, v)),
+        ('tactile', 'Тактильная плитка', 'Tactile Paving', TACTILE_LOOKS, tactile),
+        ('setts', 'Брусчатка гранитная', 'Granite Setts', SETT_LOOKS, setts),
+        ('street_utility', 'Улица', 'Street', UTIL_LOOKS, utility),
+        ('asphalt_colour', 'Асфальт цветной', 'Coloured Asphalt', [(c[0], c[1], c[2]) for c in COLOUR_ASPHALT], colour_asphalt),
+    ]
+    return [dict(st, name=n, ru=ru, en=en, looks=looks, paint=paint) for n, ru, en, looks, paint in fams]
+
+
+# ================================================================ walls
+
+# ---- panel houses (64 px)
+PANEL_LOOKS = [
+    ('concrete_grey', 'бетон серый', 'Grey Concrete'), ('concrete_beige', 'бетон бежевый', 'Beige Concrete'),
+    ('pebble_grey', 'каменная крошка серая', 'Grey Pebble-Dash'), ('pebble_brown', 'каменная крошка коричневая', 'Brown Pebble-Dash'),
+    ('pebble_white', 'каменная крошка белая', 'White Pebble-Dash'), ('tile_white', 'плиточка белая', 'White Tiles'),
+    ('tile_blue', 'плиточка голубая', 'Blue Tiles'), ('tile_beige', 'плиточка бежевая', 'Beige Tiles'),
+    ('tile_brick', 'плиточка кирпичная', 'Brick-Red Tiles'),
+    ('seam_top', 'бетон, шов сверху', 'Concrete, Seam on Top'), ('seam_left', 'бетон, шов слева', 'Concrete, Seam on the Left'),
+]
+
+
+def panel(look, v):
+    lid = PANEL_LOOKS[look][0]
+    r = rng('panel', look, v)
+    n = 64
+    concrete = grain(r, n, (156, 154, 148), 0.02)
+    concrete[blobs(r, n, 3.0, 0.25)] *= 0.95                      # faint weather stains
+    if lid == 'concrete_beige':
+        return concrete * np.array((1.06, 1.0, 0.88))
+    if lid.startswith('pebble'):
+        base = {'grey': (150, 148, 142), 'brown': (130, 104, 84), 'white': (206, 202, 192)}[lid.split('_')[1]]
+        return speckled(r, n, [(tuple(c * k for c in base), w) for k, w in ((0.8, 2), (1.0, 4), (1.12, 2), (0.65, 1))])
+    if lid.startswith('tile'):                                   # small ceramic tiles, 4 px = 62 mm, white grout
+        colours = {'white': [(228, 228, 222)], 'blue': [(130, 170, 200)], 'beige': [(214, 196, 160)],
+                   'brick': [(166, 84, 60)]}[lid.split('_')[1]]
+        img = np.zeros((n, n, 3))
+        img[:] = (190, 188, 182)
+        for ty in range(0, n, 4):
+            for tx in range(0, n, 4):
+                c = np.array(colours[0], float) * (1 + r.normal(0, 0.03))
+                img[ty:ty + 3, tx:tx + 3] = c
+        return img
+    img = concrete
+    if lid == 'seam_top':
+        img[0:3] = (52, 50, 48)
+    if lid == 'seam_left':
+        img[:, 0:3] = (52, 50, 48)
+    return img
+
+
+# ---- wall brick, 250 x 65 mm (96 px, courses 6 px, bricks 24 px)
+WALL_BRICKS = [
+    ('silicate', 'силикатный белый', 'White Sand-Lime', (214, 212, 204)),
+    ('silicate_grey', 'силикатный серый', 'Grey Sand-Lime', (176, 174, 168)),
+    ('silicate_sooty', 'силикатный закопчённый', 'Sooty Sand-Lime', (132, 128, 122)),
+    ('red', 'красный', 'Red', (156, 70, 50)),
+    ('red_old', 'красный старый', 'Old Red', (136, 72, 56)),
+    ('red_sooty', 'красный закопчённый', 'Sooty Red', (92, 54, 46)),
+    ('yellow', 'жёлтый', 'Yellow', (204, 168, 100)),
+    ('brown', 'коричневый', 'Brown', (110, 70, 50)),
+    ('cream', 'кремовый', 'Cream', (222, 200, 160)),
+    ('dark_red', 'тёмно-красный', 'Dark Red', (112, 44, 36)),
+]
+
+
+def wall_brick(look, v):
+    lid, _, _, col = WALL_BRICKS[look]
+    n, L, H = 96, 24, 6
+    jr = rng('wbj', look, v)
+    joint = (150, 146, 138) if not lid.endswith('sooty') else (100, 96, 92)
+    img = np.array(joint, float) * (1 + jr.normal(0, 0.04, (n, n, 1)))
+    for row in range(n // H):
+        off = (row % 2) * (L // 2)
+        for k in range(n // L):
+            x0 = (k * L + off) % n
+            crosses = x0 + L > n
+            r = rng('wb', look, row, k) if crosses else rng('wb', look, row, k, v)
+            c = np.array(col, float) * (1 + r.normal(0, 0.04))     # one colour, bricks differ only a little
+            t = c * (1 + r.normal(0, 0.012, (H - 1, L - 1, 1)))
+            img[np.ix_(np.arange(row * H, row * H + H - 1), np.arange(x0, x0 + L - 1) % n)] = t
+    return img
+
+
+# ---- profiled sheet (32 px, a rib every 8 px)
+SHEETS = [('white', 'белый RAL 9003', 'White RAL 9003', (238, 238, 234)), ('light_grey', 'светло-серый RAL 7035', 'Light Grey RAL 7035', (198, 202, 198)),
+          ('graphite', 'графит RAL 7024', 'Graphite RAL 7024', (70, 74, 78)), ('blue', 'синий RAL 5005', 'Blue RAL 5005', (30, 72, 140)),
+          ('green', 'зелёный мох RAL 6005', 'Moss Green RAL 6005', (22, 72, 52)), ('wine', 'вишня RAL 3005', 'Wine Red RAL 3005', (104, 30, 38)),
+          ('brown', 'шоколад RAL 8017', 'Chocolate RAL 8017', (72, 50, 42)), ('galvanized', 'оцинкованный', 'Galvanized', (172, 176, 180)),
+          ('yellow', 'жёлтый RAL 1018', 'Yellow RAL 1018', (230, 200, 44)), ('orange', 'оранжевый RAL 2004', 'Orange RAL 2004', (230, 110, 32)),
+          ('sand', 'слоновая кость RAL 1015', 'Light Ivory RAL 1015', (226, 212, 172)), ('red', 'красный RAL 3020', 'Red RAL 3020', (190, 34, 30))]
+
+
+def sheet(look, v):
+    lid, _, _, col = SHEETS[look]
+    r = rng('sheet', look, v)
+    n = 32
+    profile = np.array([1.0, 1.0, 1.0, 1.0, 0.78, 1.14, 1.14, 0.9])  # valley, a slope in shadow, the lit crest, a slope
+    img = np.array(col, float) * profile[np.arange(n) % 8][None, :, None] * np.ones((n, 1, 1))
+    img = img * (1 + r.normal(0, 0.01, (n, n, 1)))
+    if lid == 'galvanized':
+        img[blobs(r, n, 0.8, 0.3)] *= 1.06                       # spangle
+    return img
+
+
+# ---- curtain wall (64 px): a mullion on the top and left edge of every block makes a 1 m grid
+GLASS = [('blue', 'синее', 'Blue', (70, 112, 150), True), ('bronze', 'бронзовое', 'Bronze', (116, 92, 70), True),
+         ('silver', 'зеркальное', 'Mirror Silver', (150, 160, 168), True), ('green', 'зелёное', 'Green', (74, 120, 110), True),
+         ('graphite', 'графитовое', 'Graphite', (52, 58, 64), True), ('clear', 'прозрачное', 'Clear', (118, 150, 150), True),
+         ('blue_flush', 'синее без рам', 'Blue, Frameless', (70, 112, 150), False),
+         ('silver_flush', 'зеркальное без рам', 'Mirror Silver, Frameless', (150, 160, 168), False),
+         ('graphite_flush', 'графитовое без рам', 'Graphite, Frameless', (52, 58, 64), False)]
+
+
+def glass(look, v):
+    lid, _, _, col, framed = GLASS[look]
+    r = rng('glass', look, v)
+    n = 64
+    img = np.array(col, float) * (1 + r.normal(0, 0.035)) * np.ones((n, n, 1))   # each pane one flat tone
+    img = img * (1 + r.normal(0, 0.004, (n, n, 1)))
+    if framed:
+        img[0:3, :] = (62, 64, 68)
+        img[:, 0:3] = (62, 64, 68)
+    else:
+        img[0, :] = (36, 38, 40)
+        img[:, 0] = (36, 38, 40)
+    return img
+
+
+# ---- architectural concrete (32 px)
+CONCRETE_LOOKS = [('smooth', 'гладкий', 'Smooth'), ('boards', 'по доске', 'Board-Formed'), ('ties', 'с отверстиями стяжек', 'With Tie Holes'),
+                  ('old', 'старый', 'Old'), ('rust', 'с ржавыми потёками', 'With Rust Streaks'), ('white', 'белый', 'White'),
+                  ('dark', 'тёмный', 'Dark')]
+
+
+def concrete_wall(look, v):
+    lid = CONCRETE_LOOKS[look][0]
+    r = rng('cwall', look, v)
+    n = 32
+    base = {'white': (222, 220, 212), 'dark': (78, 78, 80)}.get(lid, (164, 162, 156))
+    img = grain(r, n, base, 0.018)
+    img[r.random((n, n)) < 0.015] *= 0.75                         # pores
+    if lid == 'boards':
+        for y0 in range(0, n, 4):                                 # 125 mm boards, one tone each
+            img[y0:y0 + 4] *= 1 + r.normal(0, 0.04)
+            img[y0] *= 0.86
+    elif lid == 'ties':
+        for cy in (8, 24):
+            for cx in (8, 24):
+                img[cy - 1:cy + 1, cx - 1:cx + 1] = np.array(base) * 0.45
+    elif lid in ('old', 'rust'):
+        img *= 0.84
+        img[blobs(r, n, 2.0, 0.3)] *= 0.88
+        if lid == 'rust':
+            for _ in range(3):                                    # streaks running down from the ties above
+                x = int(r.integers(0, n))
+                length = int(r.integers(10, n))
+                img[:length, x] = img[:length, x] * 0.6 + np.array((150, 80, 40)) * 0.4
+    return img
+
+
+# ================================================================ platform and grating
+
+PLATFORM_LOOKS = [('plain', 'без края', 'Plain'), ('edge_n', 'край с севера', 'Edge to the North'), ('edge_e', 'край с востока', 'Edge to the East'),
+                  ('edge_s', 'край с юга', 'Edge to the South'), ('edge_w', 'край с запада', 'Edge to the West')]
+
+
+def platform(look, v):
+    lid = PLATFORM_LOOKS[look][0]
+    sq = paver_looks(['grey'], False)
+    top = pavers('square', sq, 0, v)
+    side = grain(rng('pside', v), PN, (150, 148, 142), 0.02)
+    if lid == 'plain':
+        return {'top': top, 'side': side}
+    band = top.copy()
+    band[0:6] = grain(rng('pyl', v), PN, (222, 186, 40), 0.015)[0:6]  # 100 mm yellow line at the edge
+    tac = tactile(0, v)                                           # 500 mm of warning domes behind it
+    band[6:38] = tac[6:38]
+    band[6] = PJOINT
+    turns = {'edge_n': 0, 'edge_w': 1, 'edge_s': 2, 'edge_e': 3}[lid]   # the top face has north at its top row
+    return {'top': np.rot90(band, turns), 'side': side}
+
+
+GRATINGS = [('galvanized', 'оцинкованный', 'Galvanized', (176, 180, 184)), ('black', 'чёрный', 'Black', (44, 44, 46)),
+            ('yellow', 'жёлтый', 'Yellow', (220, 182, 40)), ('rusty', 'ржавый', 'Rusty', (128, 76, 46))]
+
+
+def grating(look, v):
+    lid, _, _, col = GRATINGS[look]
+    r = rng('grating', look, v)
+    n = 32
+    img = np.zeros((n, n, 4))
+    c = np.array(col, float) * (1 + r.normal(0, 0.02, (n, n, 1)))
+    bars = np.zeros((n, n), bool)
+    bars[:, ::4] = True                                           # bearing bars 1 px every 62 mm
+    bars[::8, :] = True                                           # cross bars every 125 mm
+    bars[0, :] = bars[:, 0] = True
+    img[..., :3] = c
+    img[..., 3] = np.where(bars, 255, 0)
+    return img
+
+
+def wall_family():
+    st = {'material': 'rock', 'sound': 'stone', 'hardness': 1.5, 'map': 'stone'}
+    fams = [
+        ('panel', 'Панель', 'Panel', PANEL_LOOKS, panel, {}),
+        ('wall_brick', 'Кирпичная кладка', 'Brickwork', [(b[0], b[1], b[2]) for b in WALL_BRICKS], wall_brick, {'map': 'red'}),
+        ('profiled_sheet', 'Профнастил', 'Profiled Sheet', [(x[0], x[1], x[2]) for x in SHEETS], sheet,
+         {'material': 'iron', 'sound': 'metal', 'hardness': 2.0, 'map': 'iron'}),
+        ('glass_facade', 'Стеклянный фасад', 'Glass Facade', [(g[0], g[1], g[2]) for g in GLASS], glass, {'sound': 'glass', 'hardness': 1.0, 'map': 'blue'}),
+        ('concrete_wall', 'Бетон архитектурный', 'Architectural Concrete', CONCRETE_LOOKS, concrete_wall, {}),
+        ('platform', 'Платформа', 'Platform', PLATFORM_LOOKS, platform, {}),
+        ('grating', 'Решётчатый настил', 'Grating', [(g[0], g[1], g[2]) for g in GRATINGS], grating,
+         {'material': 'iron', 'sound': 'metal', 'hardness': 2.0, 'map': 'iron', 'cutout': True}),
+    ]
+    return [dict(st, name=n, ru=ru, en=en, looks=looks, paint=paint, **extra) for n, ru, en, looks, paint, extra in fams]
+
+
 # ================================================================ writing everything
 
-FAMILIES = [clinker_family]
+FAMILIES = [clinker_family, road_family, wall_family]
 
 
 def lang_section(blocks):
@@ -228,14 +686,25 @@ def generate():
             if i < len(looks):
                 for v in range(b.get('variants', VARIANTS)):
                     tex = '%s_%d_%d' % (name, i, v)
-                    a = np.clip(np.round(b['paint'](i, v)), 0, 255).astype(np.uint8)
-                    Image.fromarray(a, 'RGB').save(os.path.join(TEX, tex + '.png'))
-                    write_json(os.path.join(RES, 'models', 'block', tex + '.json'),
-                               {'parent': 'block/cube_all', 'textures': {'all': 'artburgblocks:blocks/' + tex}})
+                    out = b['paint'](i, v)
+                    if isinstance(out, dict):                    # a top of its own, the sides and bottom another
+                        for part, arr in out.items():
+                            a = np.clip(np.round(arr), 0, 255).astype(np.uint8)
+                            Image.fromarray(a, 'RGB').save(os.path.join(TEX, '%s_%s.png' % (tex, part)))
+                        model = {'parent': 'block/cube_bottom_top',
+                                 'textures': {'top': 'artburgblocks:blocks/%s_top' % tex,
+                                              'side': 'artburgblocks:blocks/%s_side' % tex,
+                                              'bottom': 'artburgblocks:blocks/%s_side' % tex}}
+                    else:
+                        a = np.clip(np.round(out), 0, 255).astype(np.uint8)
+                        Image.fromarray(a, 'RGBA' if a.shape[2] == 4 else 'RGB').save(os.path.join(TEX, tex + '.png'))
+                        model = {'parent': 'block/cube_all', 'textures': {'all': 'artburgblocks:blocks/' + tex}}
+                    write_json(os.path.join(RES, 'models', 'block', tex + '.json'), model)
             variants['v=%d' % i] = [{'model': 'artburgblocks:%s_%d_%d' % (name, li, v)}
                                     for v in range(b.get('variants', VARIANTS))]
         write_json(os.path.join(RES, 'blockstates', name + '.json'), {'variants': variants})
-        spec.append({k: b[k] for k in ('name', 'material', 'sound', 'hardness', 'map')} | {'looks': [l[0] for l in looks]})
+        spec.append({k: b[k] for k in ('name', 'material', 'sound', 'hardness', 'map')} | {'looks': [l[0] for l in looks]}
+                    | ({'cutout': True} if b.get('cutout') else {}))
         print('%-24s %2d looks' % (name, len(looks)))
     write_json(os.path.join(RES, 'meta_blocks.json'), spec)
     ru, en = lang_section(blocks)
@@ -253,8 +722,10 @@ def preview(path, blocks):
     for row, b in enumerate(blocks):
         for i in range(len(b['looks'])):
             r = np.random.default_rng(row * 100 + i)
-            tiles = [np.asarray(Image.open(os.path.join(TEX, '%s_%d_%d.png' % (b['name'], i, r.integers(b.get('variants', VARIANTS))))))
-                     for _ in range(4)]
+            tiles = []
+            for _ in range(4):
+                f = os.path.join(TEX, '%s_%d_%d' % (b['name'], i, r.integers(b.get('variants', VARIANTS))))
+                tiles.append(np.asarray(Image.open(f + ('.png' if os.path.exists(f + '.png') else '_top.png')).convert('RGB')))
             n = tiles[0].shape[0]
             patch = np.zeros((2 * n, 2 * n, 3), np.uint8)
             for k, t in enumerate(tiles):
