@@ -23,7 +23,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @Mod.EventBusSubscriber(modid = ArtburgBlocks.MODID)
 public class ArtburgBlocks {
     public static final String MODID = "artburgblocks";
-    public static final String VERSION = "1.1.0";
+    public static final String VERSION = "1.2.0";
 
     public static final List<Block> BLOCKS = new ArrayList<>();
 
@@ -47,6 +47,20 @@ public class ArtburgBlocks {
         for (int percent : new int[] {60, 70, 80, 90, 110, 120}) {     // tools/gen_granite.py makes their textures
             add(new BlockGranite(percent));
         }
+        // tools/gen_asphalt.py makes their textures; plain "asphalt" matches the grey concrete of the existing roads
+        add(new BlockAsphalt("asphalt_fresh", MapColor.BLACK));
+        add(new BlockAsphalt("asphalt_new", MapColor.BLACK));
+        add(new BlockAsphalt("asphalt", MapColor.GRAY));
+        add(new BlockAsphalt("asphalt_worn", MapColor.GRAY));
+        add(new BlockAsphalt("asphalt_old", MapColor.STONE));
+        add(new BlockAsphalt("asphalt_patched", MapColor.GRAY));
+        add(new BlockAsphalt("asphalt_sealed", MapColor.STONE));
+        // road marking paint, wear in the metadata (BlockMarking.Wear)
+        add(new BlockMarking("white", MapColor.SNOW));
+        add(new BlockMarking("yellow", MapColor.YELLOW));
+        add(new BlockMarking("orange", MapColor.ADOBE));
+        add(new BlockMarking("blue", MapColor.BLUE));
+        add(new BlockMarking("red", MapColor.RED));
     }
 
     private static void add(Block block) {
@@ -63,7 +77,8 @@ public class ArtburgBlocks {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         for (Block block : BLOCKS) {
-            event.getRegistry().register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
+            event.getRegistry().register(block instanceof BlockMarking ? new ItemMarking((BlockMarking) block)
+                    : new ItemBlock(block).setRegistryName(block.getRegistryName()));
         }
     }
 
@@ -71,8 +86,15 @@ public class ArtburgBlocks {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         for (Block block : BLOCKS) {
-            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
-                    new ModelResourceLocation(block.getRegistryName(), "inventory"));
+            Item item = Item.getItemFromBlock(block);
+            if (block instanceof BlockMarking) {          // one item per wear, drawn with that wear's block model
+                for (BlockMarking.Wear w : BlockMarking.Wear.values()) {
+                    ModelLoader.setCustomModelResourceLocation(item, w.ordinal(),
+                            new ModelResourceLocation(block.getRegistryName(), "wear=" + w.getName()));
+                }
+            } else {
+                ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
+            }
         }
     }
 }

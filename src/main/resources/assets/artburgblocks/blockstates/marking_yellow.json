@@ -1,0 +1,190 @@
+{
+  "variants": {
+    "wear=fresh": [
+      {
+        "model": "artburgblocks:marking_yellow_fresh_0"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_0",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_0",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_0",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_1"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_1",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_1",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_1",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_2"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_2",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_2",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_2",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_3"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_3",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_3",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_fresh_3",
+        "y": 270
+      }
+    ],
+    "wear=normal": [
+      {
+        "model": "artburgblocks:marking_yellow_normal_0"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_0",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_0",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_0",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_1"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_1",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_1",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_1",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_2"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_2",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_2",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_2",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_3"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_3",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_3",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_normal_3",
+        "y": 270
+      }
+    ],
+    "wear=worn": [
+      {
+        "model": "artburgblocks:marking_yellow_worn_0"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_0",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_0",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_0",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_1"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_1",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_1",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_1",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_2"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_2",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_2",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_2",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_3"
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_3",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_3",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:marking_yellow_worn_3",
+        "y": 270
+      }
+    ]
+  }
+}

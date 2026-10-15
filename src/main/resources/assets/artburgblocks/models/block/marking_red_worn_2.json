@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "artburgblocks:blocks/marking_red_worn_2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "artburgblocks:blocks/marking_blue_fresh_1"
+  }
+}

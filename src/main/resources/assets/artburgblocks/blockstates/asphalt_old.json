@@ -1,0 +1,66 @@
+{
+  "variants": {
+    "normal": [
+      {
+        "model": "artburgblocks:asphalt_old_0"
+      },
+      {
+        "model": "artburgblocks:asphalt_old_0",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:asphalt_old_0",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:asphalt_old_0",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:asphalt_old_1"
+      },
+      {
+        "model": "artburgblocks:asphalt_old_1",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:asphalt_old_1",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:asphalt_old_1",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:asphalt_old_2"
+      },
+      {
+        "model": "artburgblocks:asphalt_old_2",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:asphalt_old_2",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:asphalt_old_2",
+        "y": 270
+      },
+      {
+        "model": "artburgblocks:asphalt_old_3"
+      },
+      {
+        "model": "artburgblocks:asphalt_old_3",
+        "y": 90
+      },
+      {
+        "model": "artburgblocks:asphalt_old_3",
+        "y": 180
+      },
+      {
+        "model": "artburgblocks:asphalt_old_3",
+        "y": 270
+      }
+    ]
+  }
+}
