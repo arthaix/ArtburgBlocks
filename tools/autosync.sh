@@ -32,8 +32,10 @@ synced() {  # DIR: exactly one artburgblocks jar there and it is this build
     [ "$(ls "$1" 2>/dev/null | grep -c '^artburgblocks-.*\.jar$')" = "1" ] && cmp -s "$1/$NAME" "$JAR"
 }
 
-# old jars the map's renderers held open when they were replaced: remove each as soon as it is free
+# old jars the map's renderers held open when they were replaced: remove each as soon as it is free, but only once
+# this build is on the map, or the map would be left without the mod's textures until the next deploy
 (
+    cmp -s "$MAP_PACKS/$NAME" "$JAR" || exit 0
     cd "$MAP_PACKS/../.." || exit 0
     gone=""
     for f in assets/resourcepacks/artburgblocks-*.jar; do
