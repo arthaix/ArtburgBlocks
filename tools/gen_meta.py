@@ -649,9 +649,29 @@ def wall_family():
     return [dict(st, name=n, ru=ru, en=en, looks=looks, paint=paint, **extra) for n, ru, en, looks, paint, extra in fams]
 
 
+# ================================================================ traffic signals
+
+# Lenses of a Soviet traffic signal, not lit (a lit set of all three would lie), and the matte housing they sit in.
+# One flat tone each with a faint grain (RULES 1-2); 32 px. Owner 2026-10-18: «да, делай линзы в artburgblocks».
+SIGNALS = [('red', 'линза красная', 'Red Lens', (150, 30, 28)), ('yellow', 'линза жёлтая', 'Yellow Lens', (206, 146, 30)),
+           ('green', 'линза зелёная', 'Green Lens', (30, 132, 104)), ('lunar', 'линза лунно-белая', 'Lunar White Lens', (206, 210, 216)),
+           ('housing', 'корпус чёрный матовый', 'Matte Black Housing', (30, 31, 33))]
+
+
+def signal(look, v):
+    lid, _, _, col = SIGNALS[look]
+    r = rng('signal', look, v)
+    return grain(r, 32, col, 0.012 if lid != 'housing' else 0.015)
+
+
+def signal_family():
+    return [dict(name='traffic_signal', ru='Светофор', en='Traffic Signal', looks=[(s[0], s[1], s[2]) for s in SIGNALS], paint=signal,
+                 material='glass', sound='glass', hardness=0.8, map='black')]
+
+
 # ================================================================ writing everything
 
-FAMILIES = [clinker_family, road_family, wall_family]
+FAMILIES = [clinker_family, road_family, wall_family, signal_family]
 
 
 def lang_section(blocks):

@@ -578,5 +578,19 @@
       "rusty"
     ],
     "cutout": true
+  },
+  {
+    "name": "traffic_signal",
+    "material": "glass",
+    "sound": "glass",
+    "hardness": 0.8,
+    "map": "black",
+    "looks": [
+      "red",
+      "yellow",
+      "green",
+      "lunar",
+      "housing"
+    ]
   }
 ]
